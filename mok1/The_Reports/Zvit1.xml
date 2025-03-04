@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <object alt="" name="Image1" object_type="graphic"/>
+ <object alt="" name="Image2" object_type="graphic"/>
+ <object alt="" name="Image3" object_type="graphic"/>
+ <object alt="" name="Image4" object_type="graphic"/>
+ <object alt="" name="Image5" object_type="graphic"/>
+ <object alt="" name="Image6" object_type="graphic"/>
+ <object alt="" name="Image7" object_type="graphic"/>
+ <object alt="" name="Image8" object_type="graphic"/>
+ <object alt="" name="Image9" object_type="graphic"/>
+ <object alt="" name="Image10" object_type="graphic"/>
+ <object alt="" name="Image11" object_type="graphic"/>
+ <paragraph index="42" node_type="writer">Лабораторна робота №1
+Шифр зсуву
+Дорофєєв Данило
+ПМІ – 33
+
+
+
+
+				Інтерфейс криптографічної системи
+Головне вікно програми є основним інтерфейсом для взаємодії з користувачем. Воно розділене на кілька основних секцій, кожна з яких надає певний функціонал. 
+
+
+Меню бар:</paragraph>
+ <paragraph index="43" node_type="writer">File: Новий файл, відкриття, збереження, друк, вихід.</paragraph>
+ <paragraph index="44" node_type="writer">Cipher: Шифрування, дешифрування, шифрування бінарних файлів, атака brute force, частотний аналіз.</paragraph>
+ <paragraph index="45" node_type="writer">Help: Інформація про програму.</paragraph>
+ <paragraph index="46" node_type="writer">Щоб зашифрувати, достатньо вставити текст, вибрати мову та ввести ключ(крок зсуву)</paragraph>
+ <paragraph index="47" node_type="writer">Ідентичнно щоб розшифрувати текст. 
+
+
+
+</paragraph>
+ <paragraph index="66" node_type="writer">Кроки роботи brute force у програмі:</paragraph>
+ <paragraph index="67" node_type="writer">Введення тексту:</paragraph>
+ <paragraph index="68" node_type="writer">Користувач вводить зашифрований текст у текстове поле.</paragraph>
+ <paragraph index="69" node_type="writer">Виклик brute force:</paragraph>
+ <paragraph index="70" node_type="writer">Користувач натискає кнопку &quot;Brute Force&quot; у меню або на панелі інструментів.</paragraph>
+ <paragraph index="71" node_type="writer">Перебір ключів:</paragraph>
+ <paragraph index="72" node_type="writer">Програма бере алфавіт, який відповідає вибраній мові (англійський або український).</paragraph>
+ <paragraph index="73" node_type="writer">Для кожного ключа від 0 до розміру алфавіту:</paragraph>
+ <paragraph index="74" node_type="writer">Виконується дешифрування тексту з використанням поточного ключа.</paragraph>
+ <paragraph index="75" node_type="writer">Результат зберігається у списку.</paragraph>
+ <paragraph index="76" node_type="writer">Відображення результатів:</paragraph>
+ <paragraph index="77" node_type="writer">У новому вікні відображається таблиця з усіма можливими ключами та відповідними розшифрованими текстами.</paragraph>
+ <paragraph index="78" node_type="writer">Кожен рядок містить:</paragraph>
+ <paragraph index="79" node_type="writer">Key (Ключ): Число, яке було використано для дешифрування.</paragraph>
+ <paragraph index="80" node_type="writer">Preview (Попередній перегляд): Перші 50 символів розшифрованого тексту (якщо текст довший, він обрізається і додається &quot;...&quot;).</paragraph>
+ <paragraph index="81" node_type="writer">Вибір правильного результату:</paragraph>
+ <paragraph index="82" node_type="writer">Користувач може подвійним кліком вибрати рядок з правильним розшифрованим текстом.</paragraph>
+ <paragraph index="83" node_type="writer">Програма автоматично встановлює вибраний ключ у поле для ключа та вставляє розшифрований текст у текстове поле.</paragraph>
+ <paragraph index="85" node_type="writer">
+
+Побудова частотної таблиці:</paragraph>
+ <paragraph index="86" node_type="writer">Програма аналізує текст і рахує, скільки разів кожен символ алфавіту зустрічається у тексті.</paragraph>
+ <paragraph index="87" node_type="writer">Частота кожного символу обчислюється за формулою:</paragraph>
+ <paragraph index="88" node_type="writer">Частота=Загальна кількість символів у тексті / Кількість входжень символу
+
+</paragraph>
+ <paragraph index="90" node_type="writer">Програма дозволяє як відкривати файли, так зберігати.
+</paragraph>
+ <paragraph index="91" node_type="writer">Демонстарція шифрування з українськими символами​</paragraph>
+ <paragraph index="94" node_type="writer">Та розшифрування
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+У цій частотній таблиці ще порівнюється “взята як стандартна таблиця”. Програма дозволяє зберегти частотну таблицю та використовувати її для порівнянь
+</paragraph>
+ <paragraph index="95" node_type="writer">В програмі є можливість шифрування та розшифрування у бінарному форматі. </paragraph>
+ <paragraph index="96" node_type="writer">
+XOR (виключне АБО): Це бітова операція, яка повертає 1, якщо вхідні біти різні, і 0, якщо вони однакові.</paragraph>
+ <paragraph index="97" node_type="writer">Приклад:</paragraph>
+ <paragraph index="98" node_type="writer">0 XOR 0 = 0</paragraph>
+ <paragraph index="99" node_type="writer">0 XOR 1 = 1</paragraph>
+ <paragraph index="100" node_type="writer">1 XOR 0 = 1</paragraph>
+ <paragraph index="101" node_type="writer">1 XOR 1 = 0</paragraph>
+ <paragraph index="102" node_type="writer">Ключ: Ключ — це число, яке використовується для шифрування. У програмі ключ обмежений значенням від 0 до 255 (1 байт).</paragraph>
+ <paragraph index="103" node_type="writer">Шифрування:</paragraph>
+ <paragraph index="104" node_type="writer">Кожен байт файлу XOR-иться з ключем.</paragraph>
+ <paragraph index="105" node_type="writer">Результат — зашифрований байт.</paragraph>
+ <paragraph index="106" node_type="writer">Дешифрування:</paragraph>
+ <paragraph index="107" node_type="writer">Зашифрований байт XOR-иться з тим самим ключем.</paragraph>
+ <paragraph index="108" node_type="writer">Результат — оригінальний байт.</paragraph>
+ <paragraph index="112" node_type="writer">В програму імплементовано функцію друку</paragraph>
+ <paragraph index="116" node_type="writer">Є кнопка “Про програму”, де висвітлюється інформація про розробника</paragraph>
+</indexing>
